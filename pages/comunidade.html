@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - RPG Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">🎲 RPG Online</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="mesa.html">Criar Mesa</a></li>
+                <li><a href="Aventuras.html">Procurar Aventuras</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="suporte.html" class="active">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introdução à Comunidade -->
+    <section class="community-header">
+        <h1>Bem-vindo à Comunidade RPG Online</h1>
+        <p>Conecte-se com outros jogadores, compartilhe suas aventuras e descubra novos mundos!</p>
+    </section>
+
+    <!-- Seção de Fórum -->
+    <section class="community-forum">
+        <h2>Discussões Recentes</h2>
+        <div class="forum-post">
+            <h3>📜 Dicas para Mestres Iniciantes</h3>
+            <p><strong>Autor:</strong> Ana_Lopez</p>
+            <p>Comecei a narrar campanhas de Tormenta 20 recentemente. Alguém tem dicas de como deixar as batalhas mais dinâmicas?</p>
+            <button class="btn">Ler Mais</button>
+        </div>
+        <div class="forum-post">
+            <h3>🎲 Ideias de Aventura</h3>
+            <p><strong>Autor:</strong> Lucas_Dragon</p>
+            <p>Estou procurando sugestões para aventuras rápidas no estilo D&D, algo que dure 2-3 sessões. Alguma ideia?</p>
+            <button class="btn">Ler Mais</button>
+        </div>
+        <div class="forum-post">
+            <h3>🗺️ Ferramentas de Mapas Virtuais</h3>
+            <p><strong>Autor:</strong> Mestre_Gabriel</p>
+            <p>Quais ferramentas de mapa vocês preferem usar para narrar online? Estou testando algumas opções...</p>
+            <button class="btn">Ler Mais</button>
+        </div>
+        <a href="#" class="btn">Ver Todas as Discussões</a>
+    </section>
+
+    <!-- Seção de Criar Postagem -->
+    <section class="community-create-post">
+        <h2>Inicie uma Discussão</h2>
+        <form action="#" method="POST" class="create-post-form">
+            <label for="post-title">Título</label>
+            <input type="text" id="post-title" name="post-title" placeholder="Digite o título da sua discussão" required>
+
+            <label for="post-content">Conteúdo</label>
+            <textarea id="post-content" name="post-content" rows="5" placeholder="Escreva aqui sua mensagem ou dúvida..." required></textarea>
+
+            <button type="submit" class="btn">Publicar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 RPG Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

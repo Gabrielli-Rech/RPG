@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Mesa - RPG Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">🎲 RPG Online</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="mesa.html">Criar Mesa</a></li>
+                <li><a href="Aventuras.html">Procurar Aventuras</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="suporte.html" class="active">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formulário de Criação -->
+    <main class="create-table">
+        <h1>Crie Sua Mesa de RPG</h1>
+        <p>Configure os detalhes da sua campanha e convide seus amigos para começar a aventura!</p>
+
+        <form action="#" method="POST" class="create-form">
+            <!-- Nome da Campanha -->
+            <label for="campaign-name">Nome da Campanha</label>
+            <input type="text" id="campaign-name" name="campaign-name" placeholder="Ex: Aventura nas Terras Perdidas" required>
+
+            <!-- Sistema de RPG -->
+            <label for="system">Sistema de RPG</label>
+            <select id="system" name="system" required>
+                <option value="">Selecione um sistema</option>
+                <option value="dnd">Dungeons & Dragons</option>
+                <option value="tormenta20">Tormenta 20</option>
+                <option value="vampiro">Vampiro: A Máscara</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <!-- Número de Jogadores -->
+            <label for="players">Número de Jogadores</label>
+            <input type="number" id="players" name="players" min="2" max="10" value="4" required>
+
+            <!-- Descrição da Campanha -->
+            <label for="description">Descrição da Campanha</label>
+            <textarea id="description" name="description" rows="5" placeholder="Descreva brevemente o enredo da campanha ou suas regras especiais."></textarea>
+
+            <!-- Configurações Avançadas -->
+            <fieldset>
+                <legend>Configurações Avançadas</legend>
+
+                <label>
+                    <input type="checkbox" name="visibility" value="public">
+                    Mesa Pública (visível para outros jogadores)
+                </label>
+
+                <label>
+                    <input type="checkbox" name="tools" value="maps">
+                    Incluir Ferramenta de Mapas Virtuais
+                </label>
+
+                <label>
+                    <input type="checkbox" name="tools" value="voice-chat">
+                    Incluir Chat de Voz
+                </label>
+            </fieldset>
+
+            <!-- Botões -->
+            <div class="form-buttons">
+                <button type="submit" class="btn">Criar Mesa</button>
+                <button type="reset" class="btn btn-secondary">Cancelar</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 RPG Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
